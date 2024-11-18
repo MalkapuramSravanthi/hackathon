@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Elders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nestify</div>
+      <ul>
+        <li><a href="#">Home Page</a></li>
+        <li><a href="#">Adopt Orphans</a></li>
+        <li><a href="#">Adopt Pets</a></li>
+        <li><a href="#">Seek Elderly</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="user">
+        <img src="avatar.png" alt="User Avatar">
+        <span>Sanjuna</span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" placeholder="Search...">
+      <button>🔍</button>
+    </section>
+
+    <section class="cards">
+      <div class="card" onclick="showElderModal('John', 'Retired Teacher', '65', 'Care Center A')">
+        <img src="john.jpg" alt="John">
+        <h3>John</h3>
+        <p>Occupation: Retired Teacher</p>
+        <p>Age: 65</p>
+        <p>Care Center: Care Center A</p>
+      </div>
+
+      <div class="card" onclick="showElderModal('Martha', 'Retired Nurse', '72', 'Care Center B')">
+        <img src="martha.jpg" alt="Martha">
+        <h3>Martha</h3>
+        <p>Occupation: Retired Nurse</p>
+        <p>Age: 72</p>
+        <p>Care Center: Care Center B</p>
+      </div>
+
+      <div class="card" onclick="showElderModal('Robert', 'Retired Engineer', '70', 'Care Center C')">
+        <img src="robert.jpg" alt="Robert">
+        <h3>Robert</h3>
+        <p>Occupation: Retired Engineer</p>
+        <p>Age: 70</p>
+        <p>Care Center: Care Center C</p>
+      </div>
+    </section>
+
+    <!-- Modal Section -->
+    <div id="elder-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeElderModal()">&times;</span>
+        <h3>Connect with Care Center to show interest</h3>
+        <p id="elder-details"></p>
+        <div class="modal-actions">
+          <button onclick="closeElderModal()">Cancel</button>
+          <button>Confirm</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="elders.js"></script>
+</body>
+</html>

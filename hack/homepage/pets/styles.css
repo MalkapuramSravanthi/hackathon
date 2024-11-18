@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed; /* Full-page background */
+  background-size: cover; /* Ensures the image covers the entire viewport */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(248, 248, 248, 0.9); /* Semi-transparent background */
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between items */
+}
+
+nav a {
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push search bar to the right */
+}
+
+.search-bar input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 20px;
+  height: 20px;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Hero Section with Background Image */
+.hero {
+  position: relative;
+  background: url('image.png') no-repeat center center/cover;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #f47521;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d0641c;
+}
+
+/* Footer Styling with Background */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(248, 248, 248, 0.9);
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+nav a.active {
+  color: #f47521;
+  font-weight: bold;
+}
